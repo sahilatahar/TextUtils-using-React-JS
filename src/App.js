@@ -10,8 +10,7 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
-
-
+ 
 function App() {
 
   const [mode, setmode] = useState("light");
@@ -50,8 +49,8 @@ function App() {
         <Navbar mode={mode} toggleMode={toggleMode} />
         <Alert alert={alert} />
         <Routes>
-          <Route exact path='/' element={<TextForm heading="Enter the text to analyze below" showAlert={showAlert} />}/>
-          <Route exact path='/about' element={<About mode={mode}/>}/>
+          <Route exact path='/' element={<TextForm heading="Enter the text to analyze below" showAlert={showAlert} />} />
+          <Route exact path='/about' element={<About mode={mode} />} />
         </Routes>
       </Router>
     </>
