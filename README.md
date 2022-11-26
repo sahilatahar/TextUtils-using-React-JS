@@ -1,6 +1,6 @@
 # TextUtils-using-React-JS
 
-## :link:https://sahil-atahar.github.io/
+## :link:https://sahil-atahar.github.io/TextUtils-using-React-JS
 # Getting Started with Create React App
 
 ## Available Scripts
