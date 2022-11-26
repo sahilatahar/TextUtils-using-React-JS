@@ -1,10 +1,9 @@
 import './App.css';
 import Navbar from './components/Navbar';
 import TextForm from './components/TextForm';
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import Alert from './components/Alert';
 import About from './components/About';
-import { useHistory } from 'react-router-dom'
 
 import {
   BrowserRouter as Router,
@@ -12,12 +11,6 @@ import {
   Route,
 } from "react-router-dom";
 function App() {
-
-  const history = useHistory();
-
-  useEffect(() => {
-    history.push('Page2URL')
-  }, [history])
 
   const [mode, setmode] = useState("light");
   const [alert, setAlert] = useState(null);
