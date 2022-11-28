@@ -6,7 +6,7 @@ import Alert from './components/Alert';
 import About from './components/About';
 
 import {
-  BrowserRouter as Router,
+  BrowserRouter,
   Routes,
   Route,
 } from "react-router-dom";
@@ -44,14 +44,14 @@ function App() {
   }
   return (
     <>
-      <Router>
+      <BrowserRouter>
         <Navbar mode={mode} toggleMode={toggleMode} />
         <Alert alert={alert} />
         <Routes>
-          <Route index element={<TextForm heading="Enter the text to analyze below" showAlert={showAlert} />} />
-          <Route exact path='about' element={<About mode={mode} />} />
+          <Route exact path='/TextUtils-using-React-JS' element={<TextForm heading="Enter the text to analyze below" showAlert={showAlert} />} />
+          <Route exact path='/about' element={<About mode={mode} />} />
         </Routes>
-      </Router>
+      </BrowserRouter>
     </>
   );
 }
